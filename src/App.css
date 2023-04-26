@@ -1,11 +1,13 @@
 .Eightball{
   width: 200px;
   height: 200px;
-  border-radius: 50px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Eightball-msg{
-  text-align: center;
-  vertical-align: center;
+
   color: white;
 }
