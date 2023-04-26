@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './Eightball'
+import Eightball from './Eightball'
 import answers from './Answers'
 
 function App() {
