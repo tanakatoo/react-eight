@@ -12,10 +12,18 @@ const Eightball = (props) => {
         setMsg(props.answers[rand].msg)
     }
 
+    const startOver = () => {
+        setBallColor('black')
+        setMsg('Think of a Question')
+    }
+
     return (
-        <div className="Eightball" onClick={getAnswer} style={{ backgroundColor: ballColor }} >
-            <p className="Eightball-msg">{msg}</p>
-        </div >
+        <>
+            <div className="Eightball" onClick={getAnswer} style={{ backgroundColor: ballColor }} >
+                <p className="Eightball-msg">{msg}</p>
+            </div >
+            <button onClick={startOver}>Restart</button>
+        </>
     )
 }
 
